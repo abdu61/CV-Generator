@@ -1,0 +1,482 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 400px;
+  background-color: #263238;
+  color: #e0e0e0;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 200;
+  background-color: #263238;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #37474F;
+  background-color: #1c262b;
+  color: white;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1c262b;
+  padding: 8px;
+  gap: 5px;
+  border-bottom: 1px solid #37474F;
+}
+
+.sidebar-nav button {
+  flex: 1;
+  min-width: 100px;
+  background-color: #37474F;
+  color: #e0e0e0;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 12px;
+  margin: 2px;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.sidebar-nav button:hover {
+  background-color: #455A64;
+}
+
+.sidebar-nav button.active {
+  background-color: #546E7A;
+  color: white;
+}
+
+.sidebar-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.sidebar-section {
+  margin-bottom: 25px;
+}
+
+.sidebar-section h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #90CAF9;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #455A64;
+}
+
+.sidebar-section h3 {
+  font-size: 16px;
+  color: #CFD8DC;
+  margin: 20px 0 10px 0;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 400;
+  color: #B0BEC5;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #455A64;
+  border-radius: 4px;
+  background-color: #1c262b;
+  color: white;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #64B5F6;
+  box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #455A64;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #546E7A;
+}
+
+.download-button {
+  margin: 20px;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.download-button:hover {
+  background-color: #43A047;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #455A64;
+  margin: 15px 0;
+}
+
+/* Work, education, project item styling */
+.work-experience-item, .education-item, .project-item, .skill-item {
+  background-color: #1c262b;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #37474F;
+}
+
+/* CV Preview styling */
+.cv-preview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e0e0e0;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.cv-page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm 20mm;
+  margin: 0;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* List item styling for work, education, projects */
+.list-item {
+  margin-bottom: 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.list-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.list-item-title {
+  font-weight: bold;
+}
+
+.list-item-subtitle {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.list-item-period {
+  font-style: italic;
+  color: #555;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.list-item-place {
+  font-style: italic;
+  color: #555;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+/* Name section styling */
+.name-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.name-section h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.6em;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item:not(:last-child)::after {
+  content: '|';
+  margin: 0 10px;
+}
+
+/* Section styling */
+.cv-section {
+  text-align: left;
+  font-size: 0.65em;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.cv-section ul {
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-position: outside;
+}
+
+.cv-section li {
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+/* Section header with line */
+.section-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.section-header::after {
+  content: "";
+  margin-top: 12px;
+  display: inline-block;
+  flex-grow: 1;
+  height: 1px;
+  background-color: #000;
+  margin-left: 8px;
+}
+
+/* Skill category styling */
+.skill-category {
+  margin-bottom: 8px;
+}
+
+/* Animation for section transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sidebar-content > div {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 1600px) {
+  .cv-preview {
+    padding: 40px;
+  }
+
+  .cv-page {
+    transform: scale(1.1);
+    transform-origin: top center;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .cv-preview {
+    padding: 60px;
+  }
+
+  .cv-page {
+    transform: scale(1.2);
+    transform-origin: top center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    width: 85%;
+    max-width: 350px;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .cv-preview {
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+  .cv-page {
+    padding: 10mm;
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+
+  .sidebar-nav {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .sidebar-nav button {
+    width: 100%;
+    margin: 2px 0;
+  }
+
+  .download-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 90;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .download-button span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cv-page {
+    transform: scale(0.75);
+    transform-origin: top center;
+  }
+
+  .cv-preview {
+    padding: 0;
+  }
+
+  .sidebar h1 {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+}
