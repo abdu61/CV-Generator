@@ -2,13 +2,15 @@
 
 A modern, responsive web application for creating professional, ATS-friendly CVs with a clean black and white design. 
 
-**Live Demo:** [CV Generator]() 
+**Live Demo:** [CV Generator](https://cv-generator-e7j.pages.dev/)
+
 
 ## 🛠️ Built With
 
 - [React](https://reactjs.org/) - Frontend framework
 - [Vite](https://vitejs.dev/) - Build tool
 - [React Icons](https://react-icons.github.io/react-icons/) - Icon library
+
 
 ## 🚀 Features
 
@@ -25,6 +27,7 @@ A modern, responsive web application for creating professional, ATS-friendly CVs
 - Real-time preview
 - One-click PDF download
 - Demo data for visualization
+
 
 ## 📋 Getting Started
 
@@ -61,11 +64,13 @@ A modern, responsive web application for creating professional, ATS-friendly CVs
 
 4. Open your browser and visit `http://localhost:5173`
 
+
 ## 📱 Responsive Design
 
 - Desktop: Full sidebar with expanded CV preview
 - Tablet: Collapsible sidebar with optimized CV display
 - Mobile: Hidden sidebar with toggle button and floating download button
+
 
 ## 🖨️ Printing
 
@@ -75,7 +80,9 @@ The CV is optimized for printing to PDF:
 3. When the print dialog appears, select "Save as PDF"
 4. Save your professional CV
 
+
 ## 🧩 Project Structure
+```bash
 cv-generator/
 ├── public/           # Static assets
 ├── src/
@@ -87,6 +94,8 @@ cv-generator/
 │   ├── index.css     # Global styles
 │   └── main.jsx      # Application entry point
 └── index.html        # HTML template
+```
+
 
 ## 🖋️ Usage Tips
 
@@ -95,6 +104,7 @@ cv-generator/
 - List responsibilities and achievements with action verbs
 - Group similar skills under appropriate categories
 - Use consistent formatting for dates and locations
+
 
 ## 📄 License
 
